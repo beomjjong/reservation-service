@@ -4,7 +4,6 @@ import com.beom.reservationservice.dto.request.SaveAccountRequest;
 import com.beom.reservationservice.dto.response.SaveAccountResponse;
 import com.beom.reservationservice.service.AccountService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,5 +18,9 @@ public class AccountController {
     public SaveAccountResponse saveAccount(@RequestBody SaveAccountRequest request) {
         return accountService.signup(request);
     }
+
+
+
+
 
 }
